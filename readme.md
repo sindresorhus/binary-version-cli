@@ -1,4 +1,4 @@
-# bin-version-cli [![Build Status](https://travis-ci.com/sindresorhus/bin-version-cli.svg?branch=master)](https://travis-ci.com/sindresorhus/bin-version-cli)
+# bin-version-cli
 
 > Get the version of a binary in [semver](https://github.com/npm/node-semver) format
 
