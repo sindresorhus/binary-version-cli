@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const binVersion = require('bin-version');
+import meow from 'meow';
+import binaryVersion from 'bin-version';
 
 const cli = meow(`
 	Usage
@@ -35,7 +34,7 @@ if (binaryArguments.length > 0) {
 }
 
 (async () => {
-	const version = await binVersion(binary, options);
+	const version = await binaryVersion(binary, options);
 
 	if (!version) {
 		console.error(`Could not find a version for \`${binary}\``);

@@ -2,13 +2,11 @@
 
 > Get the version of a binary in [semver](https://github.com/npm/node-semver) format
 
-
 ## Install
 
 ```
 $ npm install --global bin-version-cli
 ```
-
 
 ## Usage
 
@@ -33,13 +31,7 @@ $ bin-version --help
     1.0.2
 ```
 
-
 ## Related
 
 - [bin-version](https://github.com/sindresorhus/bin-version) - API for this module
 - [find-versions-cli](https://github.com/sindresorhus/find-versions-cli) - Find semver versions in a string
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
