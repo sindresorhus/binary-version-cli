@@ -1,9 +1,9 @@
 {
-	"name": "bin-version-cli",
+	"name": "binary-version-cli",
 	"version": "3.0.0",
 	"description": "Get the version of a binary in semver format",
 	"license": "MIT",
-	"repository": "sindresorhus/bin-version-cli",
+	"repository": "sindresorhus/binary-version-cli",
 	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
@@ -12,7 +12,7 @@
 	},
 	"type": "module",
 	"bin": {
-		"bin-version": "./cli.js"
+		"binary-version": "./cli.js"
 	},
 	"engines": {
 		"node": ">=18"

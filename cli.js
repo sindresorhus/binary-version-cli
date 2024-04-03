@@ -5,7 +5,7 @@ import binaryVersion from 'binary-version';
 
 const cli = meow(`
 	Usage
-	  $ bin-version <binary> [arguments]
+	  $ binary-version <binary> [arguments]
 
 	  The arguments default to \`--version\`
 
@@ -14,11 +14,11 @@ const cli = meow(`
 	Examples
 	  $ curl --version
 	  curl 7.30.0 (x86_64-apple-darwin13.0)
-	  $ bin-version curl
+	  $ binary-version curl
 	  7.30.0
 	  $ openssl version
 	  OpenSSL 1.0.2p  14 Aug 2018
-	  $ bin-version openssl version
+	  $ binary-version openssl version
 	  1.0.2
 `, {
 	importMeta: import.meta,
