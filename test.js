@@ -1,5 +1,5 @@
 import test from 'ava';
-import execa from 'execa';
+import {execa} from 'execa';
 
 const reVersion = /\d+\.\d+\.\d+/;
 

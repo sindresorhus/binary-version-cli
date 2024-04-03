@@ -1,6 +1,7 @@
 #!/usr/bin/env node
+import process from 'node:process';
 import meow from 'meow';
-import binaryVersion from 'bin-version';
+import binaryVersion from 'binary-version';
 
 const cli = meow(`
 	Usage
@@ -19,7 +20,9 @@ const cli = meow(`
 	  OpenSSL 1.0.2p  14 Aug 2018
 	  $ bin-version openssl version
 	  1.0.2
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const [binary, ...binaryArguments] = cli.input;
 
@@ -33,13 +36,11 @@ if (binaryArguments.length > 0) {
 	options.args = binaryArguments;
 }
 
-(async () => {
-	const version = await binaryVersion(binary, options);
+const version = await binaryVersion(binary, options);
 
-	if (!version) {
-		console.error(`Could not find a version for \`${binary}\``);
-		process.exit(2);
-	}
+if (!version) {
+	console.error(`Could not find a version for \`${binary}\``);
+	process.exit(2);
+}
 
-	console.log(version);
-})();
+console.log(version);

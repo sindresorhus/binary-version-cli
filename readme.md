@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install --global bin-version-cli
+```sh
+npm install --global bin-version-cli
 ```
 
 ## Usage
